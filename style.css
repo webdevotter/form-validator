@@ -1,28 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-* {
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 :root {
   --success-color: #2ecc71;
   --error-color: #e74c3c;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f9fafb;
   font-family: 'Open Sans', sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   margin: 0;
 }
 
 .container {
-  backgroun-color: #fff;
+  background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   width: 400px;
@@ -59,6 +57,7 @@ h2 {
 }
 
 .form-control input:focus {
+  outline: 0;
   border-color: #777;
 }
 
@@ -76,7 +75,6 @@ h2 {
   bottom: 0;
   left: 0;
   visibility: hidden;
-  display: none;
 }
 
 .form-control.error small {
